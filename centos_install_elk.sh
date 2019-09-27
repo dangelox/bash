@@ -1,4 +1,23 @@
-echo "Install Java 8"
+#!/bin/bash 
+
+###################################################################
+#Script Name	: centos_install_elk.sh
+#Description	: Install ELK stack on CentOS 7.
+#Args           : 
+#Author       	: Dilesh Fernando
+#Email         	: fernando.dilesh@gmail.com
+###################################################################
+
+# Colors for console text
+RED='\033[0;31m'
+REDBLINK='\033[0;317m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+PURPLE='\033[0;35m'
+NC='\033[0m' # No Color
+#echo -e "\n${YELLOW}Text in color!${NC}"
+
+echo -e "\n${RED}Install Java 8${NC}"
 yum install -y java-1.8.0-openjdk
 
 echo "Import PGP Key"
@@ -15,7 +34,6 @@ enabled=1
 autorefresh=1
 type=rpm-md
 EOF
-
 
 echo "Install Elasticsearch"
 yum install -y elasticsearch
@@ -101,6 +119,3 @@ EOF
 echo "Enable and Start logstash service"
 systemctl enable logstash
 systemctl start logstash
-
-
-
