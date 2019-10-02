@@ -30,7 +30,7 @@ echo -e "\n${YELLOW}Move protoc3/include to /usr/local/include/${NC}"
 sudo mv protoc3/include/* /usr/local/include/
 
 echo -e "\n${YELLOW}Change owner${NC}"
-sudo chwon [user] /usr/local/bin/protoc
-sudo chwon -R [user] /usr/local/include/google
+sudo chown $USER /usr/local/bin/protoc
+sudo chown -R $USER /usr/local/include/google
 
 echo -e "\n${GREEN}All done!${NC}"
