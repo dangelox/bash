@@ -18,10 +18,10 @@ NC='\033[0m' # No Color
 #echo -e "\n${YELLOW}Text in color!${NC}"
 
 echo -e "\n${YELLOW}Download protoc-3.9.2 version${NC}"
-curl -OL https://github.com/protocolbuffers/protobuf/releases/download/v3.9.2/protoc-3.9.2-linux-aarch_64.zip
+curl -OL https://github.com/protocolbuffers/protobuf/releases/download/v3.9.2/protoc-3.9.2-linux-x86_64.zip
 
 echo -e "\n${YELLOW}Unzip downloaded file${NC}"
-unzip protoc-3.9.2-linux-aarch_64.zip -d protoc3
+unzip protoc-3.9.2-linux-x86_64.zip -d protoc3
 
 echo -e "\n${YELLOW}Move protoc to /usr/local/bin/${NC}"
 sudo mv protoc3/bin/* /usr/local/bin/
