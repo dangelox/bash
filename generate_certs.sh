@@ -2,10 +2,15 @@
 
 ###################################################################
 #Script Name	: generate_certs.sh
-#Description	: Generate certificate authority and ca,servers, and client certs.
+#Description	: Generate certificate authority and ca,servers, 
+#				  and client certs.
 #Args           : 
 #Author       	: Dilesh Fernando
 #Email         	: fernando.dilesh@gmail.com
+#Notes			: If error executing script regarding line return 
+#				  (\r), use dos2unix convert the file format to 
+#				  unix format. This will occur when script are 
+#				  windows environment.
 ###################################################################
 
 # Colors for console text
