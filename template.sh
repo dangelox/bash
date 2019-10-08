@@ -20,6 +20,6 @@ YELLOW='\033[0;33m'
 PURPLE='\033[0;35m'
 NC='\033[0m' # No Color
 #echo -e "\n${YELLOW}Text in color!${NC}"
-
+##########################Start Script#############################
 
 echo -e "\n${GREEN}All done!${NC}"
